@@ -1,0 +1,377 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <img src="./img/old/logo2_sm.png" class="img-responsive img-header" />
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </header>
+
+    <div class="container pay-container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <form method="post">
+            <input type="hidden" name="transaction_id" value="456123789" />
+            <input type="hidden" name="fname" value="Frank" />
+            <input type="hidden" name="lname" value="Monroe" />
+            <input
+              type="hidden"
+              name="email"
+              value="jestok@eimajsoftwaresolutions.com"
+            />
+            <input type="hidden" name="amount" value="64.97" />
+            <!---	<input type='hidden' name='key' value="<br />
+<b>Warning</b>:  Undefined array key "key" in <b>C:\apps\dev_demo\static_pay.php</b> on line <b>144</b><br />
+"> --->
+            <input
+              type="hidden"
+              name="mtid"
+              value="ee437de8548a592ffca5679920e0e513"
+            />
+            <input type="hidden" name="mid" value="1002" />
+
+            <div class="panel panel-default">
+              <div class="panel-heading dropdown-pannel" id="dropdown-toggle">
+                <h3 class="panel-title">Address</h3>
+                <span class="pull-right clickable dropdown-btn"
+                  ><img
+                    src="./img/icons/down-chevron.svg"
+                    class="chevron-icon"
+                    alt=""
+                /></span>
+              </div>
+              <div class="panel-body dropdown-body" id="dropdown-body">
+                <div class="row px-3 adress-form py-4">
+                  <div class="col-md-12">
+                    <h4 class="fieldgroup-title">Billing address</h4>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        name="first_name"
+                        placeholder="First Name*"
+                        value="Frank"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        placeholder="Last Name*"
+                        name="last_name"
+                        value="Monroe"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        value="jestok@eimajsoftwaresolutions.com"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="address1"
+                        name="address1"
+                        placeholder="Street Address Line*"
+                        value="1313 Mockingbird Lane"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="address2"
+                        name="address2"
+                        placeholder="Street Address Line 2"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="city"
+                        name="city"
+                        placeholder="City*"
+                        value="Orlando"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="country"
+                          name="country"
+                          value="USA"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="zip_code"
+                          name="zip_code"
+                          placeholder="Zip/Postal Code*"
+                          value="33470"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phone"
+                          name="phone"
+                          placeholder="Phone Number*"
+                          value="5616037624"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row px-3">
+                  <div class="col-md-12">
+                    <h4 class="fieldgroup-title">Shipping address</h4>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="shipping_address1"
+                        name="shipping_address1"
+                        placeholder="Street Address Line*"
+                        value="123 Central Ave."
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="shipping_address2"
+                        name="shipping_address2"
+                        placeholder="Street Address Line 2"
+                        value="Apt 2B"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="shipping_city"
+                        name="shipping_city"
+                        placeholder="City*"
+                        value="Fort Walton Beach"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="shipping_country"
+                      name="shipping_country"
+                      value="USA"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="shipping_zip_code"
+                          name="shipping_zip_code"
+                          placeholder="Zip/Postal Code*"
+                          value="34578"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading col-sm-12 panel-heading-flex">
+                <div class="col-sm-5 px-3">
+                  <h3 class="panel-title">PAYMENT METHOD</h3>
+                </div>
+                <div class="col-sm-3 px-3">
+                  <img src="./img/old/cards.png" class="img-responsive" />
+                </div>
+              </div>
+              <div class="panel-body py-3">
+                <div class="row">
+                  <div class="col-xs-7 col-md-7">
+                    <div class="form-group px-3">
+                      <label>CARD NUMBER</label>
+                      <div class="input-group">
+                        <input
+                          size="30"
+                          type="text"
+                          name="ccnumber"
+                          value="4561 3247 7894 1654"
+                          maxlength="19"
+                          required
+                          autocomplete="off"
+                          id="card-number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    <div class="col payment-method-text">
+                      Cardholder's Purchase will initiate the immediate purchase
+                      of Stablecoin (USDC), and NO OTHER PRODUCT OR SERVICE.
+                      Once you Elect to initiate this Transfer of Tokens to
+                      Vendor, by clicking "Place Order" below, the referring
+                      Vendor will subsequently receive a Cryptocurrency Token
+                      Transfer as complete payment for your pending Order with
+                      the referring Vendor, and will immediately generate an
+                      email from the referring Vendor to you, confirming Your
+                      Order Status Paid; in accordance with the Terms &amp;
+                      Conditions below.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-7 col-md-7">
+                    <div class="form-group px-3">
+                      <label>EXPIRY DATE(MM/DD)</label>
+                      <div class="input-group">
+                        <input
+                          size="5"
+                          type="text"
+                          name="ccexp"
+                          value="12/26"
+                          maxlength="7"
+                          required=""
+                          autocomplete="off"
+                          id="card-date"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-7 col-md-7">
+                    <div class="form-group px-3">
+                      <label>CVV CODE</label>
+                      <div class="input-group">
+                        <input
+                          size="3"
+                          type="password"
+                          name="cvv"
+                          value="321"
+                          maxlength="3"
+                          required=""
+                          autocomplete="off"
+                          id="card-cvv"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active">
+                <a href="#"
+                  ><span class="badge pull-right">$ 64.97</span> Total
+                  Purchase</a
+                >
+              </li>
+            </ul>
+            <div class="row">
+              <div class="col checkbox-block">
+                <input type="checkbox" required checked />
+                <label class="checkbox-label">
+                  I agree with the
+                  <a href="#">Terms &amp; Conditions</a>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col checkbox-block">
+                <input type="checkbox" required checked />
+                <label class="checkbox-label">
+                  Transfer Cryptocurrency to complete my pending <br />order
+                  with the Vendor that referred me here.
+                </label>
+              </div>
+            </div>
+            <br />
+            <input
+              type="submit"
+              class="btn btn-success btn-lg btn-block place-older-btn"
+              value="Place Order"
+              onclick="linkTo('./reciept.html')"
+            />
+            <a
+              href="./reciept.html"
+              class="btn btn-success btn-lg btn-block place-older-btn w-100 mt-3"
+              >Place Order (redirect)</a
+            >
+            <div class="mt-3 footer-text">Authorized Reseller</div>
+          </form>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"
+    type="text/javascript"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+    type="text/javascript"
+  ></script>
+  <script src="./old.js"></script>
+</html>
