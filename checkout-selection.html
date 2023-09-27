@@ -19,21 +19,30 @@
       </div>
       <div class="container">
         <header class="header">
-          <div class="logo">
-            <img src="./img/header-logo.png" alt="" class="logo__img" />
-            <div class="logo__title">
-              <div>Casino</div>
-              <div class="logo__subtitle">Licensed Casino Sportsbook</div>
+          <div class="header__desktop">
+            <div class="logo">
+              <img src="./img/header-logo.png" alt="" class="logo__img" />
+              <div class="logo__title">
+                <div>Casino</div>
+                <div class="logo__subtitle">Licensed Casino Sportsbook</div>
+              </div>
             </div>
+            <nav class="menu">
+              <a href="#" class="menu__link">Live</a>
+              <a href="#" class="menu__link">Casino </a>
+              <a href="#" class="menu__link">Jackpots </a>
+              <a href="#" class="menu__link menu__link_active">
+                <img src="./img/icons/shopping-cart.svg" class="menu__icon" />
+              </a>
+            </nav>
           </div>
-          <nav class="menu">
-            <a href="#" class="menu__link">Live</a>
-            <a href="#" class="menu__link">Casino </a>
-            <a href="#" class="menu__link">Jackpots </a>
-            <a href="#" class="menu__link menu__link_active">
-              <img src="./img/icons/shopping-cart.svg" class="menu__icon" />
-            </a>
-          </nav>
+          <div class="header__mobile">
+            <nav class="menu-mobile">
+              <a href="#" class="menu__link">Live</a>
+              <a href="#" class="menu__link">Casino </a>
+              <a href="#" class="menu__link">Jackpots </a>
+            </nav>
+          </div>
         </header>
         <header class="page-headline page-headline_center">
           <h1 class="page-headline__title">Checkout selection</h1>
@@ -63,6 +72,7 @@
                   id="chekbox-1"
                   name="happy"
                   value="yes"
+                  checked
                 />
                 <div class="checkout-selection__checkbox"></div>
               </div>
@@ -81,6 +91,7 @@
                   id="chekbox-1"
                   name="happy"
                   value="yes"
+                  checked
                 />
                 <div class="checkout-selection__checkbox"></div>
               </div>
