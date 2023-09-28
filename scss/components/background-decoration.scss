@@ -1,0 +1,32 @@
+.background-decoration {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  overflow: hidden;
+  &__left-coin-1 {
+    @include absolute-position(274px, -700px, "left");
+  }
+
+  &__right-coin-1 {
+    @include absolute-position(69px, 770px, "left");
+  }
+
+  &__card-1 {
+    @include absolute-position(1092px, 500px, "left");
+  }
+
+  &__left-coin-2 {
+    @include absolute-position(182px, -620px, "left");
+  }
+
+  &__right-coin-2 {
+    @include absolute-position(240px, 650px, "left");
+  }
+
+  &__card-2 {
+    @include absolute-position(550px, -570px, "left");
+  }
+}

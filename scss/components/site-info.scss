@@ -1,0 +1,11 @@
+.site-info {
+  padding: 90px 0;
+  opacity: 0.5;
+  text-align: center;
+}
+
+@include mobile() {
+  .site-info {
+    padding: 40px 0;
+  }
+}

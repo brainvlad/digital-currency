@@ -1,0 +1,27 @@
+@mixin bg-blur {
+  background: $bg-blur-color;
+  backdrop-filter: $bg-blur-filter;
+}
+
+@mixin flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin absolute-position($top, $x, $side) {
+  position: absolute;
+  top: $top;
+  @if $side == 'left' {
+    left: calc(50% + #{$x});
+  } @else if $side == 'right' {
+    right: calc(50% + #{$x});
+  }
+  transform: translateX(-50%);
+}
+
+@mixin mobile() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}

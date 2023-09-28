@@ -1,0 +1,23 @@
+.page-headline {
+  display: flex;
+  flex-flow: column;
+  gap: $page-healine-gap;
+  padding: $page-healine-p;
+  max-width: 792px;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: $fz-main;
+    opacity: 0.8;
+    text-align: justify;
+  }
+
+  &_center {
+    text-align: center;
+    margin: 0 auto;
+  }
+}

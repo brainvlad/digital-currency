@@ -1,0 +1,25 @@
+.body-wrapper {
+  min-height: $body-wrapper-min-h;
+  width: $body-wrapper-w;
+  position: relative;
+  background-color: $bg-color;
+  color: $white;
+  font-family: $main-font;
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(./../img/bg.png);
+}
+
+.container {
+  width: $container-w;
+  max-width: $container-max-w + ($container-px * 2);
+  margin: auto;
+  padding: 0 $container-px;
+}
+
+@include mobile() {
+  .body-wrapper {
+    background-size: cover;
+  }
+}

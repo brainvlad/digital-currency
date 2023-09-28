@@ -1,0 +1,36 @@
+// global
+$main-font: 'Proxima Nova Rg', sans-serif;
+$transition-speed: 200ms;
+
+// font sizes
+$fz-logo-title: 1.625rem;
+$fz-logo-subtitle: 0.5rem;
+$fz-main: 1.25rem;
+$fz-page-title: 2.5rem;
+
+// containers
+$body-wrapper-min-h: 100vh;
+$body-wrapper-w: 100%;
+$container-w: 100%;
+$container-max-w: 1200px;
+$container-px: 10px;
+
+// header
+$header-h: 104px;
+$header-p: 0 40px 0 6px;
+$header-border-r: 0 0 24px 24px;
+$menu-gap: 64px;
+$menu-link-opacity-default: 0.6;
+$menu-link-circle-position-t: calc(100% + 6px);
+$menu-link-circle-position-l: 50%;
+$menu-link-circle-transform: translateX(-50%);
+$menu-link-circle-diameter: 5px;
+$menu-link-circle-border-r: 50%;
+
+// mixins
+$bg-blur-color: rgba(255, 255, 255, 0.06);
+$bg-blur-filter: blur(39.5px);
+
+// page-healine
+$page-healine-gap: 10px;
+$page-healine-p: 48px 0 42px 0;

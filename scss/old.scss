@@ -1,0 +1,251 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+.pay-container {
+  margin-top: 30px;
+}
+
+.img-header {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+  &-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.panel-default {
+  border-color: #ddd;
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+.nav-pills {
+  display: block;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.nav-pills > li > a {
+  border-radius: 4px;
+}
+.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+  color: #337ab7;
+  background-color: #fff;
+  padding: 8px 20px;
+  margin-top: -6px;
+  font-size: 16px;
+  margin-left: 3px;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.payment-method-text {
+  padding: 0px 10px 15px 15px;
+
+  &-red {
+    color: #bf0a30;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+input[type='text'],
+input[type='password'] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #d7dbdd;
+  outline-color: orange;
+}
+
+.checkbox-block {
+  padding: 15px 10px 15px 15px;
+
+  & > input[type='checkbox'] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #d7dbdd;
+    width: 20px;
+    height: 20px;
+  }
+}
+.checkbox-label {
+  padding-left: 20px;
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  margin-top: 3px;
+}
+
+.place-older-btn {
+  background: #bf0a30;
+  border-color: #bf0a30;
+
+  &:hover {
+    background-color: #bf0a30;
+    border-color: #bf0a30;
+  }
+}
+
+input[type='button'].btn-block,
+input[type='reset'].btn-block,
+input[type='submit'].btn-block {
+  width: 100%;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.fieldgroup-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-size: 18px;
+}
+
+.adress-form {
+  & input {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+.chevron-icon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transition: transform 200ms;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-pannel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &.active .chevron-icon {
+    transform: rotate(180deg);
+  }
+}
+.dropdown-body {
+  height: 0;
+  overflow: hidden;
+  transition: all 500ms;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &.active {
+    height: 640px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .panel-heading-flex {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .place-older-btn {
+    margin-top: 50px !important;
+  }
+
+  .checkbox-label {
+    padding-right: 20px;
+  }
+
+  .dropdown-body {
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+
+    &.active {
+      height: 786px;
+    }
+  }
+}
+.cart-date-input {
+  width: 100px;
+}
+.cvv-input {
+  width: 70px;
+}

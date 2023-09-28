@@ -1,0 +1,26 @@
+.btn {
+  display: block;
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 100%;
+  color: $white;
+  border-radius: 56px;
+  padding: 20px 70px;
+  border: none;
+  outline: none;
+  background: #eb1d3e;
+  backdrop-filter: blur(18.5px);
+  @include flex-centered;
+  cursor: pointer;
+  transition: $transition-speed;
+
+  &:hover {
+    filter: contrast(0.8);
+  }
+
+  &_fullwidth {
+    padding: 20px 0;
+    width: 100%;
+  }
+}

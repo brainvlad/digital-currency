@@ -1,0 +1,96 @@
+.header {
+  height: $header-h;
+  padding: $header-p;
+  border-radius: $header-border-r;
+  @include bg-blur;
+
+  &__desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__mobile {
+    display: none;
+  }
+
+  & .logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &__img {
+      padding-top: 15px;
+    }
+
+    &__title {
+      font-size: $fz-logo-title;
+    }
+
+    &__subtitle {
+      font-size: $fz-logo-subtitle;
+    }
+  }
+  & .menu {
+    display: flex;
+    align-items: center;
+    gap: $menu-gap;
+
+    &__link {
+      font-size: $fz-main;
+      opacity: $menu-link-opacity-default;
+      transition: opacity $transition-speed;
+
+      &:hover {
+        opacity: initial;
+      }
+
+      &_active {
+        opacity: initial;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: $menu-link-circle-position-t;
+          left: $menu-link-circle-position-l;
+          transform: $menu-link-circle-transform;
+          width: $menu-link-circle-diameter;
+          height: $menu-link-circle-diameter;
+          border-radius: $menu-link-circle-border-r;
+          background: $white;
+        }
+      }
+    }
+
+    &__icon {
+    }
+  }
+}
+
+@include mobile() {
+  .header {
+    height: unset;
+    padding-bottom: 20px;
+    padding-right: 16px;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+
+    &__mobile {
+      display: block;
+    }
+
+    & .menu .menu__link:not(:last-child) {
+      display: none;
+    }
+
+    & .menu-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      padding-left: 10px;
+    }
+  }
+}
